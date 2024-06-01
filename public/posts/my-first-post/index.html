@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="description" content="802.11 BSS Transition Management 作者：Jakcson 更新日期：20240428
-BSS Transition Management 是 802.11v-2011 修正案中提出的，其主要功能是在需要网络负载均衡或 BSS Termination 期间可以持续提供服务，无需重新建立连接和中断网络服务，也就是提供漫游服务。
-一、如何工作 抛开上图中其他元素，我们只需要关注 frame 的交互过程。此过程只涉及三种帧：
-BTM Query(optional) BTM Request BTM Response(optional) 其中仅 request 是必须的。这也就提供了两种工作方式：
-Unsolicited request：如果 AP 检测到 STA 的 RSSI 低于 RSSI threshold，它可以主动发送一个 BTM request 给 STA，而不需要等待 STA 发送 query。 Solicited request：如果 STA 检测到当前 AP 的 RSSI 过低，并且发现有更好 AP，可以发送一个 BTM query 给 AP，AP 分析之后发送一个 BTM request 给该 STA。 二、frame 细节 （一） BTM QUERY Dialog Token：该字段由 STA 生成的一个非零值，用来标记一次对话，因此该 Query 以及后续的 Request 和 Response 均为该值。 BSS Transition Query Reason：STA 请求 BTM 的原因。 BSS Transition Candidate List Entries：候选名单，该字段可以为空或者为数个 Neighbor Report elements。 （二） BTM REQUEST Dialog Token：若该 request 是回应 query，则该字段的值是 query 中 Dialog Token 的值；如果该 request 是由 AP 发起的，则该值是 AP 选择的一个非零值。">  
-
-  <title>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Post | Jackson Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
     
-      My First Post
-    
-  </title>
+  </head>
 
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/">RSS</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/" />
-  
-  
-  
-  <link rel="stylesheet" href="/css/main.01273a70fa873b012d056499c16bb47955e0e7526c34edb73f05ca8f99f488ebc323423c6557f93f9b42a41de0448a25ce9a1ab577d0bf61e36eaf52a4979a1d.css" integrity="sha512-ASc6cPqHOwEtBWSZwWu0eVXg51JsNO23PwXKj5n0iOvDI0I8ZVf5P5tCpB3gRIolzpoatXfQv2Hjbq9SpJeaHQ==" />
-  
-</head>
-<body a="auto">
-        <main class="page-content" aria-label="Content">
-            <div class="w">
-<a href="/">..</a>
+<div class="article-meta">
+<h1><span class="title">My First Post</span></h1>
 
+<h2 class="date">2024/05/30</h2>
+</div>
 
-<article>
-    <p class="post-meta">
-        <time datetime="2024-05-30 20:44:42 &#43;0800 CST">
-            2024-05-30
-        </time>
-    </p>
-
-    <h1>My First Post</h1>
-
-    
-
-    <h1 id="80211-bss-transition-management">802.11 BSS Transition Management</h1>
+<main>
+<h1 id="80211-bss-transition-management">802.11 BSS Transition Management</h1>
 <p><em>作者：Jakcson</em>
 <em>更新日期：20240428</em></p>
 <p>BSS Transition Management 是 802.11v-2011 修正案中提出的，其主要功能是在需要网络负载均衡或 BSS Termination 期间可以持续提供服务，无需重新建立连接和中断网络服务，也就是提供漫游服务。</p>
@@ -185,8 +179,12 @@ Unsolicited request：如果 AP 检测到 STA 的 RSSI 低于 RSSI threshold，�
 <li>11.24.7.4</li>
 </ul>
 
-</article>
+</main>
 
-            </div>
-        </main>
-    </body></html>
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
