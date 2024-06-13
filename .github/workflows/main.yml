@@ -27,7 +27,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}  # 注意填写main或者master
         with:
           personal_token: ${{ secrets.MY_PAT}} # 如果secret取了其他名称，将MY_PAT替换掉
