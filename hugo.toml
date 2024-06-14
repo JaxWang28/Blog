@@ -2,6 +2,10 @@ baseURL = 'https://jaxwang28.github.io/'
 languageCode = 'en-us'
 title = 'Jackson Blog'
 theme = 'xmin'
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
+footnotereturnlinkcontents = "↩"
 
 [menus]
   [[menus.main]]
@@ -24,3 +28,25 @@ theme = 'xmin'
     name = 'RSS'
     pageRef = '/rss'
     weight = 5
+
+[permalinks]
+note = "/note/:year/:month/:day/:slug/"
+post = "/post/:year/:month/:day/:slug/"
+
+[params]
+description = "A website built through Hugo and blogdown."
+footer = "&copy; [Jackson Wang](https://jaxwang28.github.io) 2017 -- {Year} | [Github](https://github.com/jaxwang28)"
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+  [markup.goldmark.extensions.passthrough.delimiters]
+  block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
+  inline = [ [ "\\(", "\\)" ] ]
+
