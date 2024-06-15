@@ -7,9 +7,19 @@ filename: Setting_up_blog_system_using_hugo_and_obsidian
 ---
 
 框架
+
 ```
-obsidian --Enveloppe Plugin--> github rep --github action--> github pages
+obsidian --Enveloppe Plugin--> github rep --github action(hugo) --> github pages
 ```
+
+
+
+
+# Github 配置
+
+# hugo 配置
+
+# Obsidain 配置
 
 # 踩坑
 
