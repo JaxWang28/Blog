@@ -13,17 +13,15 @@ obsidian --Enveloppe Plugin--> github rep --github action(hugo) --> github pages
 ```
 
 
-
+# hugo 配置
 
 # Github 配置
 
-# hugo 配置
-
 # Obsidain 配置
 
-# 踩坑
+# 踩坑记录
 
-* 如何使用自定义域名，在 action 中要注明自定义域名，负责每次部署之后都是默认域名
+* 如何使用自定义域名，在 action 中要注明自定义域名，否则每次部署之后都是默认域名。
 
 
 
