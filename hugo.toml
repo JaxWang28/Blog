@@ -1,4 +1,4 @@
-baseURL = 'https://jaxwang28.github.io/'
+baseURL = 'https://blog.jaxwang.top/'
 languageCode = 'en-us'
 title = 'Jackson Blog'
 theme = 'xmin'
