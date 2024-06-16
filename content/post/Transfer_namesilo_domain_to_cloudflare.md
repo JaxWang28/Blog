@@ -4,8 +4,11 @@ share: true
 draft: false
 date: 2024-06-16T0:02:46+08:00
 filename: Transfer_namesilo_domain_to_cloudflare
-tags: arkdown
-categories: Excategories
+tags:
+  - cloudflare
+  - domain
+  - namesilo
+categories: Domain
 ---
 
 购买流程就不详细描述了，从域名注册和使用 Cloudflare 解析开始写。
