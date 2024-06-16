@@ -1,3 +1,6 @@
 [submodule "themes/xmin"]
 	path = themes/xmin
 	url = https://github.com/yihui/hugo-xmin.git
+[submodule "themes/xmin-jax"]
+	path = themes/xmin-jax
+	url = git@github.com:JaxWang28/hugo-xmin-jax.git

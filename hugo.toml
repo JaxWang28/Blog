@@ -1,7 +1,7 @@
 baseURL = 'https://blog.jaxwang.top/'
 languageCode = 'en-us'
 title = 'Jackson Blog'
-theme = 'xmin'
+theme = 'xmin-jax'
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
