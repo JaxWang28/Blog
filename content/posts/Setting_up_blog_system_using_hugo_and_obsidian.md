@@ -13,7 +13,7 @@ obsidian --Enveloppe Plugin--> github rep --github action(hugo) --> github pages
 ```
 
 
-# hugo 配置
+# Hugo 配置
 
 # Github 配置
 
