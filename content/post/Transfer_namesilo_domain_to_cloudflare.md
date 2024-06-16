@@ -2,8 +2,10 @@
 title: Namesilo 域名解析到 CloudFlare
 share: true
 draft: false
-date: 2024-06-16T09:02:46+08:00
+date: 2024-06-16T0:02:46+08:00
 filename: Transfer_namesilo_domain_to_cloudflare
+tags: arkdown
+categories: Excategories
 ---
 
 购买流程就不详细描述了，从域名注册和使用 Cloudflare 解析开始写。
