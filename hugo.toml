@@ -50,3 +50,4 @@ enable = true
   block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
   inline = [ [ "\\(", "\\)" ] ]
 
+googleAnalytics = "G-7S26TLKGMX"
