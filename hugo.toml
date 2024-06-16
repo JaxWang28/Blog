@@ -51,3 +51,7 @@ enable = true
   inline = [ [ "\\(", "\\)" ] ]
 
 googleAnalytics = "G-7S26TLKGMX"
+
+
+[params.busuanzi]
+enable = true
