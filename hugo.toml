@@ -52,7 +52,8 @@ enable = true
 [services]
   [services.disqus]
     shortname = 'blog-jax'
-googleAnalytics = "G-7S26TLKGMX"
+  [services.googleAnalytics]
+    ID = '7S26TLKGMX'
 
 [params.busuanzi]
 enable = true
