@@ -50,8 +50,8 @@ enable = true
 
 
 [services]
-  [services.disqus]
-    shortname = 'blog-jax'
+  #[services.disqus]
+    #shortname = 'blog-jax'
   [services.googleAnalytics]
     ID = '7S26TLKGMX'
 
