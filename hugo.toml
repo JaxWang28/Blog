@@ -2,13 +2,8 @@ baseURL = 'https://blog.jaxwang.top/'
 languageCode = 'en-us'
 title = 'Jackson Blog'
 theme = 'xmin-jax'
-googleAnalytics = ""
 ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
 footnotereturnlinkcontents = "↩"
-
-[services]
-  [services.disqus]
-    shortname = 'blog-jax'
 
 [menus]
   [[menus.main]]
@@ -34,7 +29,7 @@ footnotereturnlinkcontents = "↩"
 
 [permalinks]
 note = "/note/:year/:month/:day/:slug/"
-post = "/post/:year/:month/:day/:slug/"
+post = "/p/:slug/"
 
 [params]
 description = "A website built through Hugo and blogdown."
@@ -53,8 +48,11 @@ enable = true
   block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
   inline = [ [ "\\(", "\\)" ] ]
 
-googleAnalytics = "G-7S26TLKGMX"
 
+[services]
+  [services.disqus]
+    shortname = 'blog-jax'
+googleAnalytics = "G-7S26TLKGMX"
 
 [params.busuanzi]
 enable = true
