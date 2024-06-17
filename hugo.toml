@@ -3,9 +3,12 @@ languageCode = 'en-us'
 title = 'Jackson Blog'
 theme = 'xmin-jax'
 googleAnalytics = ""
-disqusShortname = ""
 ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
 footnotereturnlinkcontents = "↩"
+
+[services]
+  [services.disqus]
+    shortname = 'blog-jax'
 
 [menus]
   [[menus.main]]
