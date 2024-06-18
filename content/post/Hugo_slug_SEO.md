@@ -17,20 +17,20 @@ Search Engine Optimization，搜索引擎优化，是指通过一系列优化技
 # What is slug?
 
 "slug" 是一个术语，通常指的是一种友好的URL标识符。具体来说，slug 是用于标识一篇文章、页面或其他内容的一段文本字符串，通常是可读的，便于用户理解和搜索引擎优化（SEO）。\
-slug 作为 url 的重要内容，我们还要对其进行优化：\
+slug 作为 url 的重要内容，我们还要对其进行优化：
 * 避免停用词，如 "and", "or", "but", "the", "a" 通常不影响内容的理解
 * 使用关键词
 
 # slug in Hugo
 
-设置 `permalinks` 启用 slug 作为 url。\
+设置 `permalinks` 启用 slug 作为 url。
 
 ```
 [permalinks]
 note = "/note/:year/:month/:day/:slug/"
 post = "/p/:slug/"
 ```
-<br/>
+
 在 Hugo 中，可以在每篇文章的 Front Matter 中设置 `slug`。\
 如果 `slug` 没有设置，那么 hugo 会使用 `title` 作为 `slut` 的缺省值。\
 通常我们设置一个 `slug` 之后，hugo 还会进行优化：
