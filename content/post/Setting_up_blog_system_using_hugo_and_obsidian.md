@@ -1,7 +1,7 @@
 ---
 title: 使用 hugo obsidian github 搭建博客系统
 share: true
-draft: false
+draft: true
 date: 2024-06-15T10:02:46+08:00
 filename: Setting_up_blog_system_using_hugo_and_obsidian
 ---
