@@ -2,7 +2,7 @@
 title: 提交个人博客到 Google
 share: true
 draft: false
-date: 2024-06-16T0:02:46+08:00
+date: 2024-06-16T07:02:46+08:00
 filename: Submit_my_blog_to_google
 tags:
   - hugo
@@ -23,7 +23,7 @@ site:https://blog.jaxwang.top/
 ---
 
 **卒**
-不使用此方法了，选择使用 Google Analysis ，两全其美。
+不使用此方法了，选择使用 Google Analytics，两全其美。
 
 附上添加到 google 收录的四种方式：
 1. Google Analytics
