@@ -1,6 +1,5 @@
 ---
 title: Github Pages 自定义域名
-share: false
 draft: false
 date: 2024-06-16T10:02:46+08:00
 filename: Configuring_a_custom_domain_for_github_pages
