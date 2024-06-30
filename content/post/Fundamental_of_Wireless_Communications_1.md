@@ -1,5 +1,5 @@
 ---
-title: 无线通信基础原理（一）
+title: 无线通信理论基础（一）
 slug: wifi-wireless-communication-fundamental-1
 filename: Fundamental_of_Wireless_Communications_1.md
 share: false
