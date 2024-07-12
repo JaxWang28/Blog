@@ -1,11 +1,8 @@
 ---
 title: 无线通信理论基础（四）
 slug: wifi-wireless-communication-fundamental-4
-<<<<<<< HEAD
 draft: true
-=======
 draft: false
->>>>>>> origin/main
 date: 2024-06-30T21:32:20+08:00
 tags:
   - IEEE80211
@@ -13,7 +10,6 @@ tags:
   - Wireless
 categories:
 ---
-<<<<<<< HEAD
 
 
 各种传输技术和频率范围。<br>
@@ -62,7 +58,3 @@ IEEE 802.11-2016 已经启用调频扩频 FHSS，不再赘述。蓝牙使用 FHS
 
 
 # 吞吐量与带宽
-
-
-=======
->>>>>>> origin/main
