@@ -8,6 +8,7 @@ title: Home
 
 ## 见贤思齐焉，见不贤而内自省也。
 
-**You know some birds are not meant to be caged, their feathers are just too bright.** —The Shawshank Redemption.
+**You know some birds are not meant to be caged, their feathers are just too bright.**
+                                                                 —The Shawshank Redemption.
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). See the [About](/about/) page for the usage of this theme.
+All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). 
