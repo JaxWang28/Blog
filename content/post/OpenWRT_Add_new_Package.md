@@ -13,7 +13,9 @@ categories:
 # OpenWRT 编译系统准备
 
 1. 源码下载 
-`git clone  https://github.com/openwrt/openwrt.git`
+```
+git clone  https://github.com/openwrt/openwrt.git
+```
 
 2. 版本更改
 ```
@@ -28,10 +30,14 @@ make distclean
 ```
 
 4. 配置交叉编译环境
-`make menuconfig`
+```
+make menuconfig
+```
 
 5. 编译交叉工具链
-`make toolchain/install`
+```
+make toolchain/install
+```
 
 
 6. 调整 PATH 环境变量
@@ -46,6 +52,10 @@ export PATH=/home/buildbot/source/staging_dir/host/bin:$PATH
 # 源码准备
 
 1. 在 openwrt 的源码目录创建一个 `helloworld` 目录，并创建 `helloworld.c` 文件。
+```
+mkdir helloworld
+touch helloworld.c
+```
 
 
 2. helloworld.c 如下
@@ -59,17 +69,16 @@ int main(void)
 }
 ```
 
-
-
-
 # 创建 package
 
 OpenWRT 高度依赖 **package** 的概念，几乎所有软件都是从 package 而来，包括交叉编译工具甚至是 kernel。<br>
 而 **feed** 是一个包含多个软件包的集合。它类似于一个软件仓库，提供各种可安装的软件包和依赖项。它本质上就是一个仓库，可以是本地的，也可以是网络上的，例如 Github。
 
 
-1. 在 openwrt source code 下创建一个 feed 仓库，并创建一个 examples 类别。<br>|
-`mkdir -p mypackages/examples`
+1. 在 openwrt source code 下创建一个 feed 仓库，并创建一个 examples 类别。
+```
+mkdir -p mypackages/examples
+```
 
 2. 向该仓库中添加个一 helloworld package
 ```
