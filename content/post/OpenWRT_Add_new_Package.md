@@ -1,6 +1,6 @@
 ---
 title: OpenWRT 构建个人 Package
-slug: openwrt_add_new_package_compile
+slug: openwrt_new_package_build`
 draft: false
 date: 2024-07-27T18:30:52+08:00
 tags:
