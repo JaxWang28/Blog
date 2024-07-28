@@ -49,6 +49,17 @@ make menuconfig
 ```
 
 
+5. 编译交叉工具链
+
+```
+make toolchain/install
+```
+
+6. 调整 PATH 环境变量 目标无关工具和工具链被部署到 `staging_dir/host/` 和 `staging_dir/toolchain/` 目录。`staging_dir/host/bin` 可以找到相关的可执行文件。我们将其添加到 PATH 环境变量中方便我们直接使用。
+
+```
+export PATH=/home/buildbot/source/staging_dir/host/bin:$PATH
+```
 
 
 
