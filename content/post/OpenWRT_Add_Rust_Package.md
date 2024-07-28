@@ -1,5 +1,5 @@
 ---
-title: OpenWRT Rust Package 构建
+title: OpenWRT 构建 Rust Package
 slug: OpenWRT_Rust_Package
 share: true
 draft: false
