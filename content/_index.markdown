@@ -6,8 +6,6 @@ title: Home
 
 # Jackson's Blog
 
-## 见贤思齐焉，见不贤而内自省也。
-
 **You know some birds are not meant to be caged, their feathers are just too bright.**
                                                                  —The Shawshank Redemption.
 
