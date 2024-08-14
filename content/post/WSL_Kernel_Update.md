@@ -60,7 +60,7 @@ cp arch/x86/boot/bzImage /mnt/c/User/<username>/bzImage
  创建 `%USERPROFILE%\.wslconfig` 并添加下面内容
 ```
 [wsl2]
-kernel=C:\\User\\<username>\\bzImage
+kernel=C:\\Users\\<username>\\bzImage
 ```
 
 # 0x04 检验
