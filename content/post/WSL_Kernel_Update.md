@@ -11,9 +11,9 @@ tags:
 categories:
 ---
 
-! Warning
-If you have multiple distros installed, they will all use the same kernel.
-WSL2 中不同发行版使用的是同一个内核。
+**! Warning**<br>
+If you have multiple distros installed, they will all use the same kernel.<br>
+WSL2 中不同发行版使用的是同一个内核。<br>
 
 # 0x01 准备
 
@@ -52,7 +52,6 @@ make -j$(nproc) KCONFIG_CONFIG=Microsoft/config-wsl
 ```
 sudo make modules_install headers_install
 ```
-\
 
 ```
 cp arch/x86/boot/bzImage /mnt/c/User/<username>/bzImage
