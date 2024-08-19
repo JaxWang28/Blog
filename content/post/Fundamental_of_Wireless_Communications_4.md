@@ -140,6 +140,8 @@ U-NII-2A 和 U-NII-2C 信道需要支持 DFS。<br>
 
 802.11n 技术可以将两条 20 MHz 的信道绑定在一起创造一条更大的 40 MHz 信道。<br>
 802.11ac 还可能使用 80 MHz 和 160 MHz 信道。<br>
+Fix Channel 选项通常不提供 120 124 128 是因为这三个 Channel 的扫描通常较慢。
+
 ![](https://img.jacksonwang28.top/2024/07/6f5ad0cacde8d84d549450b769cee59a.png)
 
 
