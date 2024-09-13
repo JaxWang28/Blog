@@ -7,6 +7,7 @@ date: 2024-09-05T23:53:25+08:00
 tags: 
 categories:
 ---
+
 # 0x00 EAP 框架协议
 
 Extensible Authentication Protocol 可扩展身份验证协议
@@ -51,7 +52,6 @@ EAP 是一种**框架协议**，其本身并未规定如何进行身份验证，
 |    Data ...
 +-+-+-+-+
 ```
-
 
 Code
 1 Request 
@@ -100,4 +100,3 @@ Initial EAP Request/Response Types
 
 # 0xFF 参考文献
 https://datatracker.ietf.org/doc/html/rfc3748
-
