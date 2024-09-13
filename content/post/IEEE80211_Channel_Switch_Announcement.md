@@ -13,7 +13,6 @@ categories:
 
 
 # 0x02 实现
-通过在 **Beacon 帧** 和 **Probe Response 帧** 中添加 **Channel Switch Announcement elements** 来实现此功能。
 
 ```
   AP -------------channel 52------------- Client
@@ -31,8 +30,12 @@ categories:
 
 ```
 
-
+通过在 **Beacon 帧** 和 **Probe Response 帧** 中添加 **Channel Switch Announcement elements** 来实现此功能。
 ![](https://img.jaxwang.top/2024/09/9cfdc5379d31491d23d9c99252c49c59.png)
 <center>ACS Element frame</center>
+
+
+
+
 
 

@@ -13,11 +13,6 @@ categories:
 
 Automatic Channel Selection, 简称 ACS，也可以称为 Dynamic Channel Selection。是 Wi-Fi 的一个功能特性，其允许 AP 自动扫描并选择质量最好的 channel。
 
-其意义在于：
-1. 优化性能，提高吞吐量。
-2. 简化部署。
-
-
 # 0x02 意义
 
 ACS 主要有两大意义：
