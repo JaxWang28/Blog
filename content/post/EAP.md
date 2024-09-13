@@ -54,12 +54,10 @@ EAP 是一种**框架协议**，其本身并未规定如何进行身份验证，
 
 
 Code
-
-| 1   | Request  |
-| --- | -------- |
-| 2   | Response |
-| 3   | Success  |
-| 4   | Failure  |
+1 Request 
+2 Response 
+3 Success  
+4 Failure 
 
 Identifier
 标识符，重传时使用相同的标识符
