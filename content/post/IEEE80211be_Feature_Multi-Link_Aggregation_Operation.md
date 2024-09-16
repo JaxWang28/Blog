@@ -7,7 +7,6 @@ date: 2024-09-15T22:12:02+08:00
 tags: 
 categories:
 ---
-
 # 0x01 What is MLO?
 
 在 Wi-Fi6 中，STA 与 AP 之间只在 1 个频段上建立连接（2.4G、5G、6G）。这意味着其他频段没有被使用，这无疑是一种浪费。虽然现有的 Wi-Fi 技术可以在 2.4G 5G 6G 之间切换，但切换带来的延迟可达 100ms 。<br>
@@ -33,14 +32,12 @@ Multi-Link Device，支持 MLO Device。<br>
 协议规定MLD的mac可以跟两个Link中的一个相同，也可以是另外不同的唯一地址。
 
 
-# asynchronous and synchronous
+# 0x03 asynchronous and synchronous
 
 同步多链路传输，MLD 在多条 link 上同步传输帧，起始时间对齐。<br>
 异步多链路传输，MLD 在多条 link 上异步传输帧，起始时间不对齐。
 
 ![](https://img.jaxwang.top/2024/09/a094dc352d15db23469ab8eb358b470e.png)
-
-
 
 ![](https://img.jaxwang.top/2024/09/fdb1f9b0da76c5e0e671808954a29615.png)
 
@@ -48,7 +45,7 @@ Multi-Link Device，支持 MLO Device。<br>
 但是当每个 link 所在的 Radio 没有充分隔离时，其中一条 link 的传输势必会对另一条 link 产生干扰，这种干扰为 `in-device conxextence(IDC)` 干扰。为了解决这个问题，采用同步多链路的 `Non-STR(NSTR)` 工作模式被提出。
 
 
-# Simultaneous Transmit & Receive (STR)
+# 0x04 Simultaneous Transmit & Receive (STR)
 
 STR 允许在多条 link 独立工作，link 间互不干扰。当两条 link 分别进行 TX 和 RX 时，便产生了一种全双工的现象。
 
@@ -56,53 +53,28 @@ STR 允许在多条 link 独立工作，link 间互不干扰。当两条 link �
 
 STR 与 双频双并发 DBDC 的区别？
 
-# Non-Simultaneous Transmit and Receive (NSTR)
+# 0x05 Non-Simultaneous Transmit and Receive (NSTR)
 
-NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同时接收或发送。
+NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同时接收或发送。并且传输必须同时开始与结束。
 
 ![](https://img.jaxwang.top/2024/09/ec2c3f8966f9a4c02fdb4f9b59743922.png)
 
 *其他细节？*
 
 
-
-
-
-
-
-# Multi-Link Multi-Radio (MLMR)
+# 0x06 Multi-Link Multi-Radio (MLMR)
 
 上述两种模式被称为 Multi-Link Multi-Radio 模式，这这种模式下，link 是被静态分配的，而不可以动态切换。<br>
 
-
-
-
-# Ehanced Multi-Link Signal-Radio (EMLSR)
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 0x0Ehanced Multi-Link Signal-Radio (EMLSR)
 
 
 # 0xff 参考
 
+* https://wlanprofessionals.com/exploring-key-features-of-multi-link-operation-mlo-in-wi-fi-7/
+* https://www.tp-link.com/us/blog/1067/what-is-wifi-7-s-multi-link-operation-mlo-/
 
-
-
-
-```
-https://wlanprofessionals.com/exploring-key-features-of-multi-link-operation-mlo-in-wi-fi-7/
-https://www.tp-link.com/us/blog/1067/what-is-wifi-7-s-multi-link-operation-mlo-/
-
-https://zhuanlan.zhihu.com/p/387761464
-https://www.youtube.com/watch?v=ohexy5VE170&ab_channel=WirelessLANProfessionals
-```
+* https://zhuanlan.zhihu.com/p/387761464
+* https://www.youtube.com/watch?v=ohexy5VE170&ab_channel=WirelessLANProfessionals
+* https://medium.com/@tonytsai225/vr-ar%E6%99%82%E4%BB%A3%E7%9A%84%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-wifi-7-93b9db2602bd
+* https://zhuanlan.zhihu.com/p/518719569
