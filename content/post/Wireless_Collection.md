@@ -19,9 +19,12 @@ Wi-Fi Alliance® is the worldwide network of companies that brings you Wi-Fi®,
 https://wlanprofessionals.com <br>
 Equipping & Connecting Wi-Fi Pros through our online resources and our annual conferences. <br>
 
+https://mcsindex.com <br>
+Modulation and Coding Scheme Table<br>
 
 
 # Book
+802.11 无线网络权威指南 O'REILLY<br>
 
 
 
@@ -32,4 +35,9 @@ Wi-Fi 研习者 https://www.zhihu.com/people/edward_xu <br>
 
 
 # Video
-https://www.youtube.com/@WirelessLANProfessionals
+https://www.youtube.com/@WirelessLANProfessionals<br>
+https://space.bilibili.com/416296286<br>
+
+
+
+# 供应商 Website

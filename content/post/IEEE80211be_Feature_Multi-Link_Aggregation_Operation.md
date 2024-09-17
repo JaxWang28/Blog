@@ -1,6 +1,6 @@
 ---
 title: "[IEEE80211be] MLO: Multi-Link Aggregation Operation"
-slug: ieee80211be_mlo_multi-link_operation
+slug: ieee80211be-mlo-multi-link-operation
 share: true
 draft: false
 date: 2024-09-15T22:12:02+08:00
@@ -66,7 +66,7 @@ NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同
 
 上述两种模式被称为 Multi-Link Multi-Radio 模式，这这种模式下，link 是被静态分配的，而不可以动态切换。<br>
 
-# 0x0Ehanced Multi-Link Signal-Radio (EMLSR)
+# 0x0 Ehanced Multi-Link Signal-Radio (EMLSR)
 
 
 # 0xff 参考

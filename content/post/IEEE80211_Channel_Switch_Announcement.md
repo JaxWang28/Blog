@@ -1,6 +1,6 @@
 ---
 title: "[IEEE80211] Channel Switch Announcement"
-slug: ieee80211_vhannel_switch_announcement
+slug: ieee80211-vhannel-switch-announcement
 share: true
 draft: false
 date: 2024-09-13T22:31:03+08:00

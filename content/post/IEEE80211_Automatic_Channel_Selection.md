@@ -1,6 +1,6 @@
 ---
 title: "[IEEE80211] Automatic Channel Selection"
-slug: ieee80211_automatic_channel_selection
+slug: ieee80211-automatic-channel-selection
 share: true
 draft: false
 date: 2024-09-13T22:13:36+08:00
