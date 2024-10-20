@@ -1,6 +1,6 @@
 ---
 title: EAP-Extensible Authentication Protocol
-slug: extensible_authentication_rotocol
+slug: extensible-authentication-protocol
 share: true
 draft: false
 date: 2024-09-05T23:53:25+08:00

@@ -1,6 +1,6 @@
 ---
 title: OpenWRT 构建 Rust Package
-slug: openwrt_rust_package_build
+slug: openwrt-rust-package-build
 share: true
 draft: false
 date: 2024-07-28T11:29:49+08:00

@@ -1,6 +1,6 @@
 ---
 title: OpenWRT ubus 框架
-slug: OpenWRT_ubus
+slug: OpenWRT-ubus
 share: true
 draft: false
 date: 2024-07-28T20:47:05+08:00
@@ -9,8 +9,8 @@ tags:
 categories:
 ---
 
-https://openwrt.org/docs/techref/ubus<br>
-https://hackmd.io/@rYMqzC-9Rxy0Isn3zClURg/H1BY98bRw<br>
+https://openwrt.org/docs/techref/ubus <br>
+https://hackmd.io/@rYMqzC-9Rxy0Isn3zClURg/H1BY98bRw <br>
 
 一直在使用 ubus，系统性学习一下，并准备用 rust 重构一把。
 

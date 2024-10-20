@@ -45,7 +45,9 @@ Multi-Link Device，支持 MLO Device。<br>
 但是当每个 link 所在的 Radio 没有充分隔离时，其中一条 link 的传输势必会对另一条 link 产生干扰，这种干扰为 `in-device conxextence(IDC)` 干扰。为了解决这个问题，采用同步多链路的 `Non-STR(NSTR)` 工作模式被提出。
 
 
-# 0x04 Simultaneous Transmit & Receive (STR)
+
+# 0x04 STR and NSTR
+## Simultaneous Transmit & Receive (STR)
 
 STR 允许在多条 link 独立工作，link 间互不干扰。当两条 link 分别进行 TX 和 RX 时，便产生了一种全双工的现象。
 
@@ -53,7 +55,7 @@ STR 允许在多条 link 独立工作，link 间互不干扰。当两条 link �
 
 STR 与 双频双并发 DBDC 的区别？
 
-# 0x05 Non-Simultaneous Transmit and Receive (NSTR)
+## Non-Simultaneous Transmit and Receive (NSTR)
 
 NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同时接收或发送。并且传输必须同时开始与结束。
 
@@ -62,11 +64,19 @@ NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同
 *其他细节？*
 
 
-# 0x06 Multi-Link Multi-Radio (MLMR)
+# 0x05 MLMR MLSR EMLSR
+
+## Multi-Link Multi-Radio (MLMR)
 
 上述两种模式被称为 Multi-Link Multi-Radio 模式，这这种模式下，link 是被静态分配的，而不可以动态切换。<br>
 
-# 0x0 Ehanced Multi-Link Signal-Radio (EMLSR)
+Links are statically assigned and cannot switch to other frequencies dynamically.
+
+## MLSR 
+Links can switch to other frequencies dynamically.
+
+## Ehanced Multi-Link Signal-Radio (EMLSR)
+Defined to dynamically switch all multi-link capable radios and antennas to a single link.
 
 
 # 0xff 参考
@@ -78,3 +88,4 @@ NSTR 不允许在多条 link 独立工作，在同一时间所有 link 必须同
 * https://www.youtube.com/watch?v=ohexy5VE170&ab_channel=WirelessLANProfessionals
 * https://medium.com/@tonytsai225/vr-ar%E6%99%82%E4%BB%A3%E7%9A%84%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-wifi-7-93b9db2602bd
 * https://zhuanlan.zhihu.com/p/518719569
+* https://www.mediatek.com/technology/mlo-infographic

@@ -1,6 +1,6 @@
 ---
 title: Hostapd Configuration File
-slug: hostapd_configuration_file
+slug: hostapd-configuration-file
 share: true
 draft: true
 date: 2024-09-05T22:03:30+08:00
