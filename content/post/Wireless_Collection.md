@@ -15,6 +15,9 @@ Wireless 资料整理。<br>
 https://www.wi-fi.org <br>
 Wi-Fi Alliance® is the worldwide network of companies that brings you Wi-Fi®, one of the world’s most valued communications technologies. Our vision is to connect everyone and everything, everywhere. <br>
 
+https://www.ieee.org <br>
+The professional home for the engineering and technology community worldwide. <br>
+
 https://wlanprofessionals.com <br>
 Equipping & Connecting Wi-Fi Pros through our online resources and our annual conferences. <br>
 
@@ -28,12 +31,19 @@ https://www.nsnam.org <br>
 ns-3 is a discrete-event network simulator for Internet systems, targeted primarily for research and educational use. ns-3 is free, open-source software, licensed under the GNU GPLv2 license, and maintained by a worldwide community. <br>
 
 
+# Open source code Project
+
+https://w1.fi <br>
+hostapd and wpa_supplicant <br>
+
+https://openwrt.org <br>
+OpenWrt Project <br>
 
 # Book
+
 《80211 无线网络权威指南》 O'REILLY <br>
 《深入浅出通信原理》陈爱军 <br>
-
-
+《CWNA 认证教程：无线局域网权威指南》 <br>
 
 
 # 大牛
@@ -47,5 +57,19 @@ https://space.bilibili.com/416296286 <br>
 # 供应商 Website
 https://www.mediatek.com <br>
 MediaTek <br>
+
+https://www.broadcom.com <br>
+Brodcom <br>
+
+https://www.realtek.com <br>
+RealTek <br>
+
+# 论坛
+
+恩山无线论坛 <br>
+https://www.right.com.cn <br>
+
+通信人家园 <br>
+https://www.txrjy.com <br>
 
 
