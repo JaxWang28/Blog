@@ -79,13 +79,38 @@ Links can switch to other frequencies dynamically.
 Defined to dynamically switch all multi-link capable radios and antennas to a single link.
 
 
+
+
+
+| MLO 类型 | 射频数量 | 描述 |
+| --- | --- | --- |
+| MLSR |  1   | |
+| EMLSR |  1   | |
+| MLMR(NSTR) |  >=2    | |
+| MLMR(STR) |  >=2   | |
+| EMLMR |  >=2   | |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 0xff 参考
 
 * https://wlanprofessionals.com/exploring-key-features-of-multi-link-operation-mlo-in-wi-fi-7/
 * https://www.tp-link.com/us/blog/1067/what-is-wifi-7-s-multi-link-operation-mlo-/
-
 * https://zhuanlan.zhihu.com/p/387761464
 * https://www.youtube.com/watch?v=ohexy5VE170&ab_channel=WirelessLANProfessionals
 * https://medium.com/@tonytsai225/vr-ar%E6%99%82%E4%BB%A3%E7%9A%84%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-wifi-7-93b9db2602bd
 * https://zhuanlan.zhihu.com/p/518719569
 * https://www.mediatek.com/technology/mlo-infographic
+* https://www.51cto.com/article/740988.html
+* https://blog.csdn.net/redparrot2008/article/details/139475082

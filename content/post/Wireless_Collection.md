@@ -39,6 +39,9 @@ hostapd and wpa_supplicant <br>
 https://openwrt.org <br>
 OpenWrt Project <br>
 
+https://wireless.docs.kernel.org/ <br>
+Linux Wireless documentation <br>
+
 # Book
 
 《80211 无线网络权威指南》 O'REILLY <br>
