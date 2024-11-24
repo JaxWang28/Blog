@@ -4,8 +4,9 @@ slug: extensible-authentication-protocol
 share: true
 draft: false
 date: 2024-09-05T23:53:25+08:00
-tags: 
-categories:
+tags:
+  - Protocol
+categories: Protocol
 ---
 
 # 0x00 EAP 框架协议
