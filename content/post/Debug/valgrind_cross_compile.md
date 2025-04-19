@@ -1,6 +1,6 @@
 ---
-title: 嵌入式 valgrind
-slug: valgrind-embeded
+title: valgrind 交叉编译
+slug: valgrind-cross-compile
 share: true
 draft: false
 date: 2025-04-19T21:45:06+08:00
