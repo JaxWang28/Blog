@@ -9,4 +9,3 @@ title: Home
 **You know some birds are not meant to be caged, their feathers are just too bright.**<br>
                                                             —The Shawshank Redemption.
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/). 
