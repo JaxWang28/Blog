@@ -19,7 +19,9 @@ categories:
 * RF 芯片
 * FEM 芯片
 
+重要网站：<br>
 
+**WikiDevi** is a user-editable database for computer hardware. https://wikidevi.wi-cat.ru/
 
 
 # CPU

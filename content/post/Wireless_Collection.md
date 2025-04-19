@@ -30,6 +30,8 @@ Since 1982, RCR Wireless News has been providing wireless and mobile industry ne
 https://www.nsnam.org <br>
 ns-3 is a discrete-event network simulator for Internet systems, targeted primarily for research and educational use. ns-3 is free, open-source software, licensed under the GNU GPLv2 license, and maintained by a worldwide community. <br>
 
+https://wikidevi.wi-cat.ru/ <br>
+**WikiDevi** is a user-editable database for computer hardware.  <br>
 
 # Open source code Project
 
