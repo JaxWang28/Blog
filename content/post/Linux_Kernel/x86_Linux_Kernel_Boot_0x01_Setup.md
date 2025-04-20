@@ -1,5 +1,5 @@
 ---
-title: x86 Linux 启动流程第一阶段 —— setup
+title: x86 Linux 启动第一阶段 —— setup
 slug: x86-linux-kernet-boot-setup
 share: true
 draft: false
@@ -38,7 +38,7 @@ xxd arch/x86/boot/setup.bin
 ```
 
 
-# Setup 过程函数跳转
+# setup 过程函数跳转
 ![](https://img.jaxwang.top/2025/04/1ea16f28231769c5f553393cfd522178.png)
 
 # _start
