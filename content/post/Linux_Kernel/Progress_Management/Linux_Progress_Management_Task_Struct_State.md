@@ -24,28 +24,28 @@ struct task_struct {
 }
 
 /* Used in tsk->__state: */
-#define TASK_RUNNING			0x00000000
-#define TASK_INTERRUPTIBLE		0x00000001
-#define TASK_UNINTERRUPTIBLE	0x00000002
-#define __TASK_STOPPED			0x00000004
-#define __TASK_TRACED			0x00000008
+#define TASK_RUNNING            0x00000000
+#define TASK_INTERRUPTIBLE      0x00000001
+#define TASK_UNINTERRUPTIBLE    0x00000002
+#define __TASK_STOPPED          0x00000004
+#define __TASK_TRACED           0x00000008
 /* Used in tsk->exit_state: */
-#define EXIT_DEAD			    0x00000010
-#define EXIT_ZOMBIE			    0x00000020
-#define EXIT_TRACE			    (EXIT_ZOMBIE | EXIT_DEAD)
+#define EXIT_DEAD               0x00000010
+#define EXIT_ZOMBIE             0x00000020
+#define EXIT_TRACE              (EXIT_ZOMBIE | EXIT_DEAD)
 /* Used in tsk->__state again: */
-#define TASK_PARKED			    0x00000040
-#define TASK_DEAD			    0x00000080
-#define TASK_WAKEKILL			0x00000100
-#define TASK_WAKING			    0x00000200
-#define TASK_NOLOAD			    0x00000400
-#define TASK_NEW			    0x00000800
-#define TASK_RTLOCK_WAIT		0x00001000
-#define TASK_FREEZABLE			0x00002000
+#define TASK_PARKED             0x00000040
+#define TASK_DEAD               0x00000080
+#define TASK_WAKEKILL           0x00000100
+#define TASK_WAKING             0x00000200
+#define TASK_NOLOAD             0x00000400
+#define TASK_NEW                0x00000800
+#define TASK_RTLOCK_WAIT        0x00001000
+#define TASK_FREEZABLE          0x00002000
 #define __TASK_FREEZABLE_UNSAFE (0x00004000 * IS_ENABLED(CONFIG_LOCKDEP))
-#define TASK_FROZEN			    0x00008000
-#define TASK_STATE_MAX			0x00010000
-#define TASK_ANY			    (TASK_STATE_MAX-1)
+#define TASK_FROZEN             0x00008000
+#define TASK_STATE_MAX          0x00010000
+#define TASK_ANY                (TASK_STATE_MAX-1)
 ```
 
 
@@ -60,3 +60,5 @@ struct task_struct {
 |EXIT_ZOMBIE | 僵死状态：进程的执行被终止，但是父进程还没有发布 `wait4()` 和 `waitpid()` 系统调用来返回有关死亡进程的信息。此时内核还不能丢弃死亡进程描述符中的数据，父进程还可能需要|
 |EXIT_DEAD| 僵死撤销状态：父进程刚发出 `wait4()` `waitpid()` 系统调用，进程由系统删除。为了防止其它执行线程在同一个进程上也执行 `wait()` 类系统调用，把进程从 `EXIT_ZOMBIE` 切换到 `EXIT_DEAD` |
 
+# Ref.
+https://blog.jaxwang.top/p/linux-progress-taskstruct-state/
