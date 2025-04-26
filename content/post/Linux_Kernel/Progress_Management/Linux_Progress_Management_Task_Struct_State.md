@@ -1,5 +1,5 @@
 ---
-title: Linux-进程管理-进程描述符-state
+title: Linux - 进程管理 - 进程描述符 - state
 slug: linux-progress-taskstruct-state
 share: true
 draft: false
