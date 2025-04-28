@@ -1,5 +1,5 @@
 ---
-title: x86 Linux 启动第一阶段-setup
+title: x86 Linux 启动第一阶段 - setup
 slug: x86-linux-kernet-boot-setup
 share: true
 draft: false
