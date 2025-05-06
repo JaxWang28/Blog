@@ -1,0 +1,4 @@
+disqus 必须添加一个评论然后创建 Discussion，否则 SEO 会有 404 导致无法收录
+
+
+hugo server  --bind  192.168.1.233 --port 1314
