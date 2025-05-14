@@ -18,7 +18,7 @@ QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.6)
 
 # 魔数 MZ
 
-```
+```shell
 readelf -x .bstext  arch/x86/boot/setup.elf
 Hex dump of section '.bstext':
 0x00000000 4d5a0000 00000000 00000000 00000000 MZ..............
