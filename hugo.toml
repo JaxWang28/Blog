@@ -28,7 +28,7 @@ footnotereturnlinkcontents = "↩"
     weight = 5
   [[menus.main]]
     name = 'RSS'
-    pageRef = '/rss'
+    url = 'index.xml'
     weight = 6
 
 [permalinks]
