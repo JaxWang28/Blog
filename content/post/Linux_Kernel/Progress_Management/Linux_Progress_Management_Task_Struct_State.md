@@ -2,7 +2,7 @@
 title: Linux - 进程管理 - 进程描述符 - state
 slug: linux-progress-taskstruct-state
 share: true
-draft: false
+draft: true
 date: 2025-04-20T17:26:06+08:00
 tags:
   - Linux
