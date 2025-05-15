@@ -1,5 +1,5 @@
 ---
-title: Linux - 数据结构 - list
+title: Linux Kernel 数据结构分析之链表
 slug: linux-data-structure-list
 share: true
 draft: false
@@ -12,42 +12,52 @@ categories:
 ---
 
 
-# Linux 内核中链表的实现
+# Linux Kernel 数据结构分析之链表
 
-Linux 中实现了双向循环链表，和 hash 链表。
+Linux Kernel 中实现了以下两种链表：
+* 双向循环链表
+* hash 链表
 
-## 一、双向链表 list_head
+本文将分别分析两种链表的实现。
 
-Linux 使用了最简洁的方式实现了一个几乎是万能的链表，其通过将下面结构体嵌入到其他结构体中，实现双向循环链表。在 `include/linux/list.h` 定义了支持的所有操作。
+## 一、双向循环链表
 
-*include/linux/types.h*
-```
+Linux 使用了最简洁的方式实现了一个几乎是万能的链表，其通过将 `struct list_head` **嵌入到其他结构体中**，实现双向循环链表。并在 `include/linux/list.h` 定义了支持的所有操作。
+
+```C
+// include/linux/types.h
+
 struct list_head {
 	struct list_head *next, *prev;
 };
 ```
 
-**Example**
 
-*mm/slab_common.c*
+以 `keme_caches` 链表进行分析。
+
 ```
+// mm/slab_common.c
+
 LIST_HEAD(slab_caches);
 ```
 
-*mm/slab.h*
 ```
+// mm/slab.h
+
 struct kmem_cache {
     ....
     struct list_head list;		/* List of slab caches */
     ....
 }
 ```
-![](https://img.jaxwang.top/2025/04/c8590fa84ab49e876bb5296f2dc13712.png)
 
-从上面的例子中，指针指向的都是 `struct kmem_cache` 中 `list` 成员的地址，如何通过这个成员获得 `struct kmem_cache` 的地址，在 Linux 中称为 `list_entry` 的操作，通过下面代码实现：
+<img src="https://img.jaxwang.top/2025/04/c8590fa84ab49e876bb5296f2dc13712.png" width="50%" height="50%">
 
-*include/linux/list.h*
+上面的例子中，指针指向是 `struct kmem_cache` 中 `list` 成员。通过这个成员的地址获得 `struct kmem_cache` 的地址的操作，在 Linux 中通过 `list_entry` 实现。下面分析其实现逻辑。
+
 ```
+// include/linux/list.h
+
 /**
  * list_entry - get the struct for this entry
  * @ptr:	the &struct list_head pointer.
@@ -58,8 +68,9 @@ struct kmem_cache {
 	container_of(ptr, type, member)
 ```
 
-*include/linux/container_of.h*
 ```
+// include/linux/container_of.h
+
 /**
  * container_of - cast a member of a structure out to the containing structure
  * @ptr:	the pointer to the member.
@@ -76,8 +87,9 @@ struct kmem_cache {
 	((type *)(__mptr - offsetof(type, member))); })
 ```
 
-*tools/include/linux/kernel.h*
 ```
+// tools/include/linux/kernel.h
+
 #ifndef offsetof
 #define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)
 #endif
@@ -88,13 +100,13 @@ struct kmem_cache {
 3. `list_entry` list_head 作为一个成员嵌入到结构体中，已知 list_head 指针，调用 `container_of` 获得结构体指针。
 
 
+## 二、hash 链表
 
-## 二、hash 链表 hlist_
+linux kernel 中定义 `hlist_head` 用作 hash 表中的链表头，`hlist_node` 用作链表中的某一项。
 
-linux 中定义 `hlist_head` 用作 hash 表中的链表头，`hlist_node` 用作链表中的某一项。
-
-*include/linux/types.h*
 ```
+// include/linux/types.h
+
 struct hlist_head {
 	struct hlist_node *first;
 };
@@ -104,14 +116,15 @@ struct hlist_node {
 };
 ```
 
-![](https://img.jaxwang.top/2025/04/743a01bbad60899615e2f1507da5f383.png)
+<img src="https://img.jaxwang.top/2025/04/743a01bbad60899615e2f1507da5f383.png" width="50%" height="50%">
 
-Linux 设计 `hlist_head` 仅包含一个指针用作 hash_table 中的列表头，这样可以节省很大空间，特别是当 hash bucket 很大的时候，可以节省一半空间。
+Linux kernel 设计 `hlist_head` 仅包含一个指针用作 hash_table 中的列表头，这样可以节省很大空间，特别是当 hash bucket 很大的时候，可以节省一半空间。
 
 散列表的冲突情况很少，链表不会很长，遍历很快。将 `pprev` 设计为指向前一个节点的 `next` 很容易实现删除操作。
 
-*include/linux/list.h*
 ```
+// include/linux/list.h
+
 static inline void __hlist_del(struct hlist_node *n)
 {
 	struct hlist_node *next = n->next;
@@ -124,7 +137,7 @@ static inline void __hlist_del(struct hlist_node *n)
 ```
 
 
-# 三、Ref
+# Ref
 https://blog.csdn.net/weixin_39094034/article/details/104803967
 
 https://linux.laoqinren.net/kernel/hlist/
