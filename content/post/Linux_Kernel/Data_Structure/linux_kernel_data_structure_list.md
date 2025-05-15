@@ -5,7 +5,6 @@ share: true
 draft: false
 date: 2025-04-30T15:07:00+08:00
 tags:
-  - Linux
   - Kernel
   - DataStructure
 categories:

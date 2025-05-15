@@ -1,22 +1,23 @@
 ---
-title: Linux - 内存管理 - 物理内存模型
-slug: linux-memory-physical-memory-model
-share: true
-draft: true
+title: Linux Kernel 内存管理之物理内存模型
+slug: linux-kernel-memory-physical-memory-model
+share: truse
+draft: false
 date: 2025-04-29T16:30:00+08:00
 tags:
-  - Linux
   - Kernel
-  - Memory
+  - MemoryMamagemtn
 categories:
 ---
+
+# Linux Kernel 内存管理之物理内存模型
 
 4GB RAM 4KB 页面大小的 Linux 系统会产生一百万之多的 `struct page`，组织管理这些结构体的方式我们称为内存模型。Linux 目前支持两种模型：`FLATMEM` `SPARSEMEM`。
 
 无论选择哪个内存模型，都会通过**一个或多个数组**管理 `struct page`。
 
 
-# 内存空洞 memory hole
+## 一、内存空洞 memory hole
 
 事实上 RAM 只是物理地址空间的一部分，物理地址空间通常会出现一部分地址是不用做普通内存使用的，对于这地址我们称之为**内存空洞 Memory Hole**。
 
@@ -35,11 +36,11 @@ categories:
 
 对于其中 `reserved` 的部分是不可作为普通内存使用的。
 
-# FLATMEM 平坦内存模型
+## 二、FLATMEM 平坦内存模型
 
 最简单的内存模型，只适用于具有连续或大部分连续物理内存的 non-NUMA 系统。
 
-## 基本思想
+### 基本思想
 
 仅使用一个**全局数组** `mem_map` 来组织所有物理内存的 `struct page`。
 
@@ -61,7 +62,7 @@ FLATMEM 物理内存模型，大多数架构中，内存空洞也会有对应的
 
 某些体系结构可能会释放那些不对应实际物理页面的 `mem_map` 数组部分。在这种情况下，体系结构特定的 `pfn_valid()` 实现需要考虑 `mem_map` 中的空洞。
 
-## PFN <-> struct page 
+### PFN <-> struct page 
 
 
 ```
@@ -70,7 +71,7 @@ PFN - ARCH_PFN_OFFSET = struct page 在 mem_map 中的索引
 *对于一些系统其物理内存的起始地址并不是 0，PFN 与第一个页框之间存在一个偏移量 ARCH_PFN_OFFSET， 这里不做过多赘述，对于上述 Example，ARCH_PFN_OFFSET=0.*
 
 
-# SPARSEMEM 稀疏内存模型
+## 二、SPARSEMEM 稀疏内存模型
 
 稀疏内存模型使用更灵活的管理方式，其核心思想就是对粒度更小的连续内存块进行精细的管理。
 
@@ -80,7 +81,7 @@ PFN - ARCH_PFN_OFFSET = struct page 在 mem_map 中的索引
 * alternative memory maps for non-volatile memory device
 * deferred initialization of the memory map for larger systems.
 
-## 基本思想
+### 基本思想
 
 * 将物理内存划分为若干**段**，每个段由 `struct mem_section` 表示
 * 每个段包含一个 `section_mem_map`，逻辑上指向一个 `sturct page` **数组**
@@ -122,11 +123,11 @@ include/linux/mmzone.h
 
 当物理地址空间中出现 `128MB` 空洞时，并且这 `128MB` 空洞是与 128MB 对齐的就可以减少这部分的 `struct page` 分配而节省内存。
 
-## PFN <-> struct page 
+### PFN <-> struct page 
 
 [ref](https://docs.kernel.org/mm/memory-model.html#:~:text=With%20SPARSEMEM%20there%20are%20two%20possible%20ways%20to%20convert%20a%20PFN%20to%20the%20corresponding%20struct%20page)
 
-## INIT
+### INIT
 
 ```
 setup_arch()
@@ -180,6 +181,6 @@ void __init sparse_init(void)
 
 
 
-# Ref
+## Ref
 https://docs.kernel.org/mm/memory-model.html
 https://www.cnblogs.com/binlovetech/p/16914715.html
