@@ -2,7 +2,7 @@
 title: Linux - 内存管理 - 页描述符
 slug: linux-memory-page-descriptor
 share: true
-draft: false
+draft: true
 date: 2025-04-29T16:25:00+08:00
 tags:
   - Linux

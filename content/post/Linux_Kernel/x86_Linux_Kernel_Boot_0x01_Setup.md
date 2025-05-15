@@ -2,7 +2,7 @@
 title: x86 Linux 启动第一阶段 - setup
 slug: x86-linux-kernet-boot-setup
 share: true
-draft: false
+draft: true
 date: 2025-04-19T20:45:06+08:00
 tags:
   - Linux

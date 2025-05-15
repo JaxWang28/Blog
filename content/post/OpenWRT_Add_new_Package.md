@@ -1,7 +1,7 @@
 ---
 title: OpenWRT 构建个人 Package
 slug: openwrt-new-package-build
-draft: false
+draft: true
 date: 2024-07-27T18:30:52+08:00
 tags:
   - OpenWRT

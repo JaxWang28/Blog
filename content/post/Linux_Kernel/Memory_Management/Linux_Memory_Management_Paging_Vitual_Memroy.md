@@ -2,7 +2,7 @@
 title: Linux - 内存管理 - 分页虚拟存储理论
 slug: linux-memory-paging-fundamental
 share: true
-draft: false
+draft: true
 date: 2025-04-26T14:37:06+08:00
 tags:
   - Linux

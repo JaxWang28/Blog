@@ -3,10 +3,10 @@ title: 使用 CloudFlare R2 搭建图床
 slug: cloudflare-r2-image
 filename: Set_Up_Image_Hosting_with_CloudFlare_R2.md
 share: false
-draft: false
+draft: true
 date: 2024-06-15T10:02:46+08:00
 tags: 
-categories: 
+categories:
 ---
 
 

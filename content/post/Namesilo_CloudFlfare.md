@@ -2,7 +2,7 @@
 title: Namesilo 域名解析到 CloudFlare
 slug: Namesilo-transfer-CloudFlare
 share: true
-draft: false
+draft: true
 date: 2024-06-16T0:02:46+08:00
 filename: Transfer_namesilo_domain_to_cloudflare
 tags:

@@ -2,7 +2,7 @@
 title: valgrind 交叉编译
 slug: valgrind-cross-compile
 share: true
-draft: false
+draft: true
 date: 2025-04-19T21:45:06+08:00
 tags:
   - embeded

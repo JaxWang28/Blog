@@ -2,7 +2,7 @@
 title: x86 Linux 启动第二阶段 - protected mode
 slug: x86-linux-kernet-boot-setup
 share: true
-draft: false
+draft: true
 date: 2025-04-20T11:04:06+08:00
 tags:
   - Linux

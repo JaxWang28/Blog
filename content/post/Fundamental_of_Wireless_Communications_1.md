@@ -3,7 +3,7 @@ title: 无线通信理论基础（一）
 slug: wifi-wireless-communication-fundamental-1
 filename: Fundamental_of_Wireless_Communications_1.md
 share: false
-draft: false
+draft: true
 date: 2024-06-19T23:29:42+08:00
 tags:
   - IEEE80211

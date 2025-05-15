@@ -2,7 +2,7 @@
 title: OpenWRT ubus 框架
 slug: OpenWRT-ubus
 share: true
-draft: false
+draft: true
 date: 2024-07-28T20:47:05+08:00
 tags:
   - OpenWRT

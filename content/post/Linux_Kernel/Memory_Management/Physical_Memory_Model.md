@@ -2,7 +2,7 @@
 title: Linux - 内存管理 - 物理内存模型
 slug: linux-memory-physical-memory-model
 share: true
-draft: false
+draft: true
 date: 2025-04-29T16:30:00+08:00
 tags:
   - Linux

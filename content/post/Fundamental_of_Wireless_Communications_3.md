@@ -1,7 +1,7 @@
 ---
 title: 无线通信理论基础（三）
 slug: wifi-wireless-communication-fundamental-3
-draft: false
+draft: true
 date: 2024-06-29T21:32:20+08:00
 tags:
   - IEEE80211

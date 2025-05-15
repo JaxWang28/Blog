@@ -2,7 +2,7 @@
 title: 路由器硬件组成
 slug: router-hardware
 share: true
-draft: false
+draft: true
 date: 2024-11-24T19:45:06+08:00
 tags:
   - OpenWRT

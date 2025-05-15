@@ -2,7 +2,7 @@
 title: The History of Wi-Fi
 slug: history_of_wifi
 share: true
-draft: false
+draft: true
 date: 2024-09-19T09:29:34+08:00
 tags: 
 categories:

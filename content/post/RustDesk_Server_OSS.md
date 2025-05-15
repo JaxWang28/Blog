@@ -2,7 +2,7 @@
 title: RustDesk 自建服务器
 slug: RustDesk-Server-OSS
 share: true
-draft: false
+draft: true
 date: 2024-11-02T18:11:54+08:00
 tags: 
 categories:

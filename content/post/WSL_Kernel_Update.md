@@ -2,7 +2,7 @@
 title: WSL2 Kernel 升级更换
 slug: wsl2-kernel-update
 share: true
-draft: false
+draft: true
 date: 2024-08-14T11:04:51+08:00
 tags:
   - WSL

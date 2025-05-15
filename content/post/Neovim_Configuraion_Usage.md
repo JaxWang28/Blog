@@ -2,7 +2,7 @@
 title: neovim 配置及使用
 slug: neovim-configuraion-usage
 share: true
-draft: false
+draft: true
 date: 2024-10-20T15:17:52+08:00
 tags: 
 categories:

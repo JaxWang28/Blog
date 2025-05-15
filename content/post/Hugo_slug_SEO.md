@@ -3,7 +3,7 @@ title: hugo slug 与 SEO
 slug: hugo-slug-SEO
 filename: Hugo_slug_SEO
 share: true
-draft: false
+draft: true
 date: 2024-06-18T21:47:30+08:00
 tags:
   - hugo

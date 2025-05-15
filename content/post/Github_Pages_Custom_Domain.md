@@ -1,7 +1,7 @@
 ---
 title: Github Pages 自定义域名
 slug: GithugPages-Custom-Domain
-draft: false
+draft: true
 date: 2024-06-16T10:02:46+08:00
 filename: Configuring_a_custom_domain_for_github_pages
 ---

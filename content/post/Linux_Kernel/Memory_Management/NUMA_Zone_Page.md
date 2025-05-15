@@ -2,7 +2,7 @@
 title: Linux - 内存管理 - NUMA ZONE
 slug: linux-memory-numa-zone-page
 share: true
-draft: false
+draft: true
 date: 2025-05-07T20:25:00+08:00
 tags:
   - Linux
