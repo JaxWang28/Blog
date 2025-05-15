@@ -11,9 +11,12 @@ tags:
 categories:
 ---
 
+
+# Linux 内核中链表的实现
+
 Linux 中实现了双向循环链表，和 hash 链表。
 
-# 0x01 双向链表 list_head
+## 一、双向链表 list_head
 
 Linux 使用了最简洁的方式实现了一个几乎是万能的链表，其通过将下面结构体嵌入到其他结构体中，实现双向循环链表。在 `include/linux/list.h` 定义了支持的所有操作。
 
@@ -86,7 +89,7 @@ struct kmem_cache {
 
 
 
-# 0x02 hash 链表 hlist_
+## 二、hash 链表 hlist_
 
 linux 中定义 `hlist_head` 用作 hash 表中的链表头，`hlist_node` 用作链表中的某一项。
 
@@ -121,7 +124,7 @@ static inline void __hlist_del(struct hlist_node *n)
 ```
 
 
-# 0x03 Ref
+# 三、Ref
 https://blog.csdn.net/weixin_39094034/article/details/104803967
 
 https://linux.laoqinren.net/kernel/hlist/
