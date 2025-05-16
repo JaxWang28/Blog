@@ -11,7 +11,7 @@ categories:
 
 # RS-232 串口通信协议
 
-串口通信（Serial Communication）是一种常用的**系统间通信方式**。其使用 RS-232 标准。本文将从物理层和协议层讲解 RS-232 标准。
+串口通信（Serial Communication）是一种常用的全双工**系统间通信方式**。其使用 RS-232 标准。本文将从物理层和协议层讲解 RS-232 标准。
 
 ![](https://img.jaxwang.top/2025/05/8f404cbc844bb57a6d272703ad138a10.png)
 
