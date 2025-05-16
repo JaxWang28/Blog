@@ -71,7 +71,7 @@ PFN - ARCH_PFN_OFFSET = struct page 在 mem_map 中的索引
 *对于一些系统其物理内存的起始地址并不是 0，PFN 与第一个页框之间存在一个偏移量 ARCH_PFN_OFFSET， 这里不做过多赘述，对于上述 Example，ARCH_PFN_OFFSET=0.*
 
 
-## 二、SPARSEMEM 稀疏内存模型
+## 三、SPARSEMEM 稀疏内存模型
 
 稀疏内存模型使用更灵活的管理方式，其核心思想就是对粒度更小的连续内存块进行精细的管理。
 
@@ -179,8 +179,7 @@ void __init sparse_init(void)
 
 ```
 
-
-
 ## Ref
 https://docs.kernel.org/mm/memory-model.html
+
 https://www.cnblogs.com/binlovetech/p/16914715.html
