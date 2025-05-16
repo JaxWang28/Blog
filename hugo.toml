@@ -27,9 +27,13 @@ footnotereturnlinkcontents = "↩"
     pageRef = '/about'
     weight = 5
   [[menus.main]]
+    name = 'Bookshelf'
+    url = '/bookshelf'
+    weight = 6
+  [[menus.main]]
     name = 'RSS'
     url = 'index.xml'
-    weight = 6
+    weight = 7
 
 [permalinks]
 note = "/note/:year/:month/:day/:slug/"

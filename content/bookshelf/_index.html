@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    .bookshelf {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .book {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 150px;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.2s;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .book-title {
+      font-size: 1rem;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bookshelf</h1>
+  <h3>A curated collection of books I've read and highly recommend.</h3>
+  <div class="bookshelf">
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/isbn/0596005652.jpg" alt="Book Cover 1" />
+      <div class="book-title">Understanding the Linux Kernel</div>
+    </div>
+  </div>
+</body>
+</html>
