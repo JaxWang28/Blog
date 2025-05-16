@@ -72,9 +72,9 @@ cd valgrind
 make -j4 install
 ```
 
-4. 准备带有 debug info 的 libc
+4. 准备带有 debug info 的 `ld.so`
 
-valgrind 需要使用带调试信息的 `libc`，否则会报 `cannot be set up` 错误，`libc` 可以在交叉编译工具链中找到。
+`valgrind memcheck` 需要使用带调试信息的 `ld.so`， 其会拦截并替换 ld.so 中的某些符号（比如 strlen）以实现正确的检测[1]。 否则会报 `cannot be set up` 错误，`ld.so` 可以在交叉编译工具链中找到。
 
 ```
 $ find . -name "*ld*.so"
@@ -87,7 +87,7 @@ $ file ./aarch64-linux-gnu/libc/lib/ld-2.25.so
 
 5. 开始检测
 
-将编译产生的工具目录和 `libc` 放入板子，启动 valgrind.
+将编译产生的工具目录和 `ld.so` 放入板子，启动 valgrind.
 
 ```
 export VALGRIND_LIB=/libexec/valgrind && valgrind --tool=memcheck --leak-check=full /tmp/ld-2.28.so program
@@ -98,18 +98,20 @@ export VALGRIND_LIB=/libexec/valgrind && valgrind --tool=memcheck --leak-check=f
 
 ## References
 
-valgrind.org https://valgrind.org/
+[1] https://valgrind.org/docs/manual/dist.readme-packagers.html
 
-https://www.cnblogs.com/yucloud/p/armbuild_valgrind3.html
+[2] valgrind.org https://valgrind.org/
 
-https://valgrind.org/downloads/repository.html
+[3] https://www.cnblogs.com/yucloud/p/armbuild_valgrind3.html
 
-论文 模糊测试中的静态插桩技术 https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.202220883.pdf
+[4] https://valgrind.org/downloads/repository.html
 
-论文 Valgrind: A Framework for Heavyweight Dynamic Binary Instrumentation https://valgrind.org/docs/valgrind2007.pdf
+[5] 论文 模糊测试中的静态插桩技术 https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.202220883.pdf
 
-https://zhuanlan.zhihu.com/p/382100526
+[6] 论文 Valgrind: A Framework for Heavyweight Dynamic Binary Instrumentation https://valgrind.org/docs/valgrind2007.pdf
 
-https://robotchaox.github.io/linux-tool/valgrind%E5%86%85%E5%AD%98%E6%A3%80%E6%B5%8B.html
+[7] https://zhuanlan.zhihu.com/p/382100526
 
-https://www.semanticscholar.org/paper/Runtime-Overhead-Reduction-in-Automated-Parallel-Hoshi-Ootsu/3035e38a830e14daf02d55c13037f101e55b0246
+[8] https://robotchaox.github.io/linux-tool/valgrind%E5%86%85%E5%AD%98%E6%A3%80%E6%B5%8B.html
+
+[9] https://www.semanticscholar.org/paper/Runtime-Overhead-Reduction-in-Automated-Parallel-Hoshi-Ootsu/3035e38a830e14daf02d55c13037f101e55b0246
