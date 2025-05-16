@@ -40,7 +40,7 @@ note = "/note/:year/:month/:day/:slug/"
 post = "/p/:slug/"
 
 [params]
-description = "A website built through Hugo and blogdown."
+description = "Welcome Jackson's Blog."
 footer = "&copy; [Jackson Wang](https://jaxwang28.github.io) 2017 -- {Year} | [Github](https://github.com/jaxwang28)"
 
 [markup.highlight]
