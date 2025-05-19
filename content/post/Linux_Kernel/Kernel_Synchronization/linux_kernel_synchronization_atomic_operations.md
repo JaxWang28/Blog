@@ -26,7 +26,7 @@ void thread_B _func()
 }
 ```
 
-上面代码的理想执行结果是`i` 为 2，但事实并非如此， i 在有一定的概率为 1。对于 `thread_A` 和 `thread_B` 进行的操作可以简单理解为：**读 - 修改 - 回写**。从单处理器和多处理器角度分析：
+上面代码的理想执行结果是`i` 为 2，但事实并非如此， i 有一定的概率为 1。对于 `thread_A` 和 `thread_B` 进行的操作可以简单理解为：**读 - 修改 - 回写**。从单处理器和多处理器角度分析：
 * 单处理器：`thread_A` 与 `thread_B` 存在并发，当 `thread_A` 执行完 `读` 操作，CPU 有可能切换为 `thread_B` 执行 `读` 操作，这样最终的结果为 1.
 * 多处理器：`thread_A` 与 `thread_B` 存在并发，`thread_A` 与 `thread_B` 可能同时执行 `读` 操作，这样最终结果也为 1.
 
@@ -34,7 +34,7 @@ void thread_B _func()
 
 原子操作是以硬件为基础，即 **CPU 必须提供原子操作的汇编指令**。本文以 ARMv8 架构为例从下至上分析原子操作。
 
-## ARM64 原子操作
+## 一、ARM64 原子操作
 
 原子操作需要处理器提供硬件支持，ARMv8 提供两种方式实现了原子操作：
 1. 独占内存访问指令：独占加载（Load-Exclusive）和独占存储（Store-Exclusive）指令，其实现方式叫做连接加载/条件存储（Load-Link/Store-Conditional, LL/SC）
@@ -129,7 +129,7 @@ xt = tmp         // 返回旧值
 |umix|无符号数的最小值操作|
 
 
-## Linux Kernel 原子操作
+## 二、Linux Kernel 原子操作
 
 接下来从 Linux 源码角度分析原子操作。正如前文所言 ARMv8 支持两种形式的原子操作 `LD/SC` 和 `LSE`，在 Linux Kernel 中的体现如下：
 
