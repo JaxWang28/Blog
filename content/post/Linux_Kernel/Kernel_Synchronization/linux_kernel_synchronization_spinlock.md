@@ -1,5 +1,5 @@
 ---
-title: Linux Kernel Linux Kernel 内核同步之自旋锁
+title: Linux Kernel 内核同步之自旋锁
 slug: linux-kernel-synchronization-spinlock
 share: true
 draft: false
