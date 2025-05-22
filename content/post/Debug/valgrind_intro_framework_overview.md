@@ -1,5 +1,6 @@
 ---
 title: Valgrind 基础介绍与框架概览
+description: Valgrind 基本原理及框架介绍。
 slug: valgrind-intro-framework-overview
 share: true
 draft: false
@@ -8,8 +9,7 @@ tags:
   - embeded
   - valgrind
   - debug
-categories:
-description: Valgrind 基本原理及框架介绍。
+categories: Debug
 ---
 
 

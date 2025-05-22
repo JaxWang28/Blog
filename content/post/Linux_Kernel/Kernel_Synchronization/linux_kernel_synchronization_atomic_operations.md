@@ -1,5 +1,6 @@
 ---
 title: Linux Kernel 内核同步之原子操作
+description: Linux Kernel 同步技术之原子操作原理分析。
 slug: linux-kernel-synchronization-atomic-operations
 share: true
 draft: false
@@ -7,7 +8,7 @@ date: 2025-05-18T21:37:06+08:00
 tags:
   - Kernel
   - KernelSynchronization
-categories:
+categories: Kernel
 ---
 
 # Linux Kernel 内核同步之原子操作

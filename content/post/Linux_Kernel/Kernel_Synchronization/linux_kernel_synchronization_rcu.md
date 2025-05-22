@@ -1,5 +1,6 @@
 ---
 title: Linux Kernel 内核同步之 RCU
+description: Linux Kernel 同步技术之 RCU 原理分析。
 slug: linux-kernel-synchronization-rcu
 share: true
 draft: false
@@ -7,7 +8,7 @@ date: 2025-05-20T20:37:06+08:00
 tags:
   - Kernel
   - KernelSynchronization
-categories:
+categories: Kernel
 ---
 
 # Linux Kernel 内核同步之 RCU

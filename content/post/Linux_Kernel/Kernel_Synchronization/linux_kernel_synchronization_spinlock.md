@@ -1,5 +1,6 @@
 ---
 title: Linux Kernel 内核同步之自旋锁
+description: Linux Kernel 同步技术之自旋锁原理分析。
 slug: linux-kernel-synchronization-spinlock
 share: true
 draft: false
@@ -7,7 +8,7 @@ date: 2025-05-19T22:37:06+08:00
 tags:
   - Kernel
   - KernelSynchronization
-categories:
+categories: Kernel
 ---
 
 # Linux Kernel 内核同步之自旋锁

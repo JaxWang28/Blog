@@ -7,7 +7,7 @@ date: 2025-04-29T16:30:00+08:00
 tags:
   - Kernel
   - MemoryMamagemtn
-categories:
+categories: Kernel
 ---
 
 # Linux Kernel 内存管理之物理内存模型

@@ -1,5 +1,6 @@
 ---
 title: I2C 通信协议
+description: I2C 通信协议原理分析。
 slug: i2c-protocol
 share: true
 draft: false

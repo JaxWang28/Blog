@@ -1,5 +1,6 @@
 ---
 title: Linux Kernel 数据结构分析之链表
+description: Linux Kernel 内核中链表实现及其实现原理。
 slug: linux-data-structure-list
 share: true
 draft: false
@@ -7,7 +8,7 @@ date: 2025-04-30T15:07:00+08:00
 tags:
   - Kernel
   - DataStructure
-categories:
+categories: Kernel
 ---
 
 

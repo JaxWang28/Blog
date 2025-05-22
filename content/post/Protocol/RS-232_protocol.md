@@ -1,12 +1,13 @@
 ---
 title: RS-232 串口通信协议
+description: RS-232 串口通信协议分析。
 slug: rs232-protocol
 share: true
 draft: false
 date: 2025-05-16T12:12:00+08:00
 tags:
   - protocol
-categories:
+categories: Protocol
 ---
 
 # RS-232 串口通信协议

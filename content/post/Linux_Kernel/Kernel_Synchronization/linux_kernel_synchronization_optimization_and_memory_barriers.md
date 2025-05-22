@@ -1,5 +1,6 @@
 ---
 title: Linux Kernel 内核同步之优化和内存屏障
+description: Linux Kernel 同步技术之优化和内存屏障原理分析。
 slug: linux-kernel-synchronization-optimization-memory-barriers
 share: true
 draft: false
@@ -7,7 +8,7 @@ date: 2025-05-19T20:37:06+08:00
 tags:
   - Kernel
   - KernelSynchronization
-categories:
+categories: Kernel
 ---
 
 # Linux Kernel 内核同步之优化和内存屏障
