@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Jackson's Blog
 ---
 
 # Jackson's Blog
