@@ -9,6 +9,7 @@ tags:
   - valgrind
   - debug
 categories:
+description: Valgrind 基本原理及框架介绍。
 ---
 
 

@@ -1,5 +1,5 @@
 baseURL = 'https://blog.jaxwang.top/'
-languageCode = 'en-us'
+languageCode = 'zh-CN'
 title = 'Jackson Blog'
 theme = 'xmin-jax'
 ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
@@ -41,10 +41,11 @@ post = "/p/:slug/"
 
 [params]
 description = "Welcome Jackson's Blog."
-footer = "&copy; [Jackson Wang](https://jaxwang28.github.io) 2017 -- {Year} | [Github](https://github.com/jaxwang28)"
+footer = "&copy; [Jackson Wang](https://jaxwang28.github.io) 2022 -- {Year} | [Github](https://github.com/jaxwang28)"
 
 [markup.highlight]
-codeFences = false
+codeFences = true
+lineNos    = true
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -56,12 +57,3 @@ enable = true
   block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
   inline = [ [ "\\(", "\\)" ] ]
 
-
-[services]
-  #[services.disqus]
-    #shortname = 'blog-jax'
-  [services.googleAnalytics]
-    ID = '7S26TLKGMX'
-
-[params.busuanzi]
-enable = true
