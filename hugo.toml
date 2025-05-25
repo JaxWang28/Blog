@@ -45,7 +45,7 @@ footer = "&copy; [Jackson Wang](https://jaxwang28.github.io) 2022 -- {Year} | [G
 
 [markup.highlight]
 codeFences = true
-lineNos    = true
+lineNos    = false
 
 [markup.goldmark.renderer]
 unsafe = true
