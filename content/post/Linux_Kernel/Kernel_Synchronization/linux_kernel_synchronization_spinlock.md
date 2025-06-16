@@ -90,7 +90,7 @@ ticket spinlock 完美解决了公平问题，但是存在一个问题，就是�
 	1. 若 `next` 不为 `NULL`，则将 `next->locket` 置为 `1`。如图中时刻 4。
 	2. 若 `next` 为 `NULL`，则将自旋锁变量置为 `NULL`
 
-![](https://img.jaxwang.top/2025/05/2633c01cacf10dc09abfdfb4706f9b18.png)
+![](https://img.jaxwang28.top/2025/05/2633c01cacf10dc09abfdfb4706f9b18.png)
 
 ```
 static inline

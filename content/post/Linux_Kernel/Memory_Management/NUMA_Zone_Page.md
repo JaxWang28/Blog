@@ -12,11 +12,11 @@ categories:
 ---
 
 # 0x01 NUMA Non-Uniform Memory Access 概述
-![](https://img.jaxwang.top/2025/04/54d2c03b18a4e0eab8c71c100f7a820f.png)
+![](https://img.jaxwang28.top/2025/04/54d2c03b18a4e0eab8c71c100f7a820f.png)
 
 ## 单处理器时代
 单核时代，CPU 与内存之间的关系是简单的。CPU 通过前端总线（FSB, Front Side Bus）连接到北桥芯片（集成内存控制器），北桥芯片连接到内存。
-![](https://img.jaxwang.top/2025/04/f49b62a3a29bc162d11b5bf6e1851693.png)
+![](https://img.jaxwang28.top/2025/04/f49b62a3a29bc162d11b5bf6e1851693.png)
 ## 多处理器时代
 
 随着 CPU 的频率提高出现瓶颈，开始向多核发展。 出现了对称多处理器系统，多个 CPU 共享同一个内存池，通过总线 Bus 相连。每个 CPU 访问内存所需时间相同。这种架构称为 **Uniform-memory-Access UMA**。使用总线就会存在资源争用和一致性问题，随着 CPU 数量增多争用愈演愈烈，以至于 4 核 CPU 性能达不到 2 核 1.5 倍。
@@ -27,7 +27,7 @@ categories:
 
 这种架构模型，cpu访问本地内存与远程内存所用的时间是不一样的，一般访问本地内存要比访问远程内存快，因此也被称做非一致或非均匀内存访问模型(Nonuniform-Memory-Access, 简称NUMA)。在 NUMA 中，每个 CPU（或 CPU 组）有自己的本地内存，同时也可以访问其他 CPU 的远程内存，但远程访问的延迟更高。
 
-![](https://img.jaxwang.top/2025/04/3da9e0613ee79b63f12ab97135bac08d.png)
+![](https://img.jaxwang28.top/2025/04/3da9e0613ee79b63f12ab97135bac08d.png)
 
 *一颗 CPU 一定在一个 Node 中。一个 Node 可以包含多颗 CPU。*
 
@@ -140,7 +140,7 @@ enum zone_type {
 
 # 0x04 Node Zone Page 组织结构
 
-![](https://img.jaxwang.top/2025/05/ec28f3a25fc0fc066700823373ab4d8c.png)
+![](https://img.jaxwang28.top/2025/05/ec28f3a25fc0fc066700823373ab4d8c.png)
 
 *include/linux/mmzone.h*
 ```

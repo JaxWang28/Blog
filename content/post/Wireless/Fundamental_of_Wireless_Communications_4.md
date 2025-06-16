@@ -14,7 +14,7 @@ categories:
 各种传输技术和频率范围。<br>
 
 # 窄带与扩频
-![](https://img.jaxwang.top/2024/06/13e863e07b7ef254346f03794ad711df.png)<br>
+![](https://img.jaxwang28.top/2024/06/13e863e07b7ef254346f03794ad711df.png)<br>
 射频传输的方式主要分为窄带 narrowband 和扩频 spread spectrum。<br>
 窄带：使用极窄的带宽发送携带数据。<br>
 扩频：使用超出实际所需的带宽发送数据。<br>
@@ -24,7 +24,7 @@ categories:
 
 
 **多径干扰**<br>
-![](https://img.jaxwang.top/2024/06/3b0bac646faef2045c408753b7248cc6.png)
+![](https://img.jaxwang28.top/2024/06/3b0bac646faef2045c408753b7248cc6.png)
 主信号与反射信号之间的延迟称为时延扩展 delay spread，如果时延扩展过大，反射信号可能干扰主信号的同一数据流，这种情况称为符号间干扰 ISI。<br>
 扩频系统不易受到多径的干扰，因为扩频将信号扩展到更大的频率范围，不同频率在多径内产生的延迟不同，某些波长可能受干扰，其他波长不受干扰，因此优于窄带。<br>
 在 802.11n/ac 出现之前多径一直是影响无线局域网的性能和吞吐量的因素。<br>
@@ -97,12 +97,12 @@ DFS 机制能检测雷达信号是否存在，并动态引导发射机切换到�
 
 # 2.4 GHz 信道
 IEEE 将 2.4 GHz ISM 频段划分为 14 条独立的信道，监管机构指定哪些信道可以使用。<br>
-![](https://img.jaxwang.top/2024/07/3fb9e68f43c6cf3d51b4e88431706a7e.png)<br>
+![](https://img.jaxwang28.top/2024/07/3fb9e68f43c6cf3d51b4e88431706a7e.png)<br>
 
 
 
 # 5 GHz 信道
-![](https://img.jaxwang.top/2024/07/54b2dcd596bdd7f6a027a4541ca58dbc.png)<br>
+![](https://img.jaxwang28.top/2024/07/54b2dcd596bdd7f6a027a4541ca58dbc.png)<br>
 信道中心频率计算公式：<br>
 ```
 信道 x  5 + 5000 MHz
@@ -110,13 +110,13 @@ IEEE 将 2.4 GHz ISM 频段划分为 14 条独立的信道，监管机构指定�
 
 5 GHz U-NII 频段共有 25 条 20 MHz 的信道可以使用，可用信道与国家规定有关。<br>
 U-NII-2A 和 U-NII-2C 信道需要支持 DFS。<br>
-![](https://img.jaxwang.top/2024/07/2a48387b6884d3adbfc186539ab5acc4.png)<br>
+![](https://img.jaxwang28.top/2024/07/2a48387b6884d3adbfc186539ab5acc4.png)<br>
 
 802.11n 技术可以将两条 20 MHz 的信道绑定在一起创造一条更大的 40 MHz 信道。<br>
 802.11ac 还可能使用 80 MHz 和 160 MHz 信道。<br>
 Fix Channel 选项通常不提供 120 124 128 是因为这三个 Channel 的扫描通常较慢。
 
-![](https://img.jaxwang.top/2024/07/6f5ad0cacde8d84d549450b769cee59a.png)
+![](https://img.jaxwang28.top/2024/07/6f5ad0cacde8d84d549450b769cee59a.png)
 
 
 # 邻信道、非邻道与重叠信道

@@ -39,7 +39,7 @@ xxd arch/x86/boot/setup.bin
 
 
 # setup 过程函数跳转
-![](https://img.jaxwang.top/2025/04/1ea16f28231769c5f553393cfd522178.png)
+![](https://img.jaxwang28.top/2025/04/1ea16f28231769c5f553393cfd522178.png)
 
 # _start
 

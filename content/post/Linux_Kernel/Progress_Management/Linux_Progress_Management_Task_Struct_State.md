@@ -12,7 +12,7 @@ categories:
 ---
 
 
-![](https://img.jaxwang.top/2025/04/36b9b75b2ec34273e0b4b59a2d746966.png)
+![](https://img.jaxwang28.top/2025/04/36b9b75b2ec34273e0b4b59a2d746966.png)
 
 ```
 include/linux/sched.h

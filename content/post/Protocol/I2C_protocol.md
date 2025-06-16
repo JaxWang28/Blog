@@ -18,7 +18,7 @@ I2C 是一种半双工**系统内部协议**，即在系统内多个集成电路
 
 I2C 通信设备之间的常用连接方式如下：
 
-![](https://img.jaxwang.top/2025/05/1746f76b8a598ac9083caf25e73ea9cc.png)
+![](https://img.jaxwang28.top/2025/05/1746f76b8a598ac9083caf25e73ea9cc.png)
 
 * 一条 I2C 总线包含两条线路：
 	* SDA：双向串行数据线，用来传输数据
@@ -42,20 +42,20 @@ I2C 通信设备之间的常用连接方式如下：
 * SCL为高电平的时候SDA表示的数据有效：SDA 为高电平时表示逻辑1， 为低电平时表示逻辑0
 * SCL为低电平的时候SDA表示的数据无效：SDA 一般在这个时候进行电平切换
 
-![](https://img.jaxwang.top/2025/05/b023386cd13cf1971813db9ee2b7c1f4.png)
+![](https://img.jaxwang28.top/2025/05/b023386cd13cf1971813db9ee2b7c1f4.png)
 
 
 ## 二、协议层
 
 I2C 的通信过程是**由主机发起的，支持主机写数据到从机和主机在从机中读数据**，其过程如下图：
 
-![](https://img.jaxwang.top/2025/05/2b0cafa288aa0740a608ca59a5ae7cb3.jpeg)
+![](https://img.jaxwang28.top/2025/05/2b0cafa288aa0740a608ca59a5ae7cb3.jpeg)
 
-![](https://img.jaxwang.top/2025/05/00b6f43c6d80736921627bb7b5741d56.jpeg)
+![](https://img.jaxwang28.top/2025/05/00b6f43c6d80736921627bb7b5741d56.jpeg)
 
 1. 起始信号 S 当 SCL 线是高电平时 SDA 线从高电平向低电平切换，这个情况表示通讯的起始。起始和停止信号一般由主机产生。
 
-![](https://img.jaxwang.top/2025/05/35e8b3ffbcc8f9e9f2f561d07c69755d.png)
+![](https://img.jaxwang28.top/2025/05/35e8b3ffbcc8f9e9f2f561d07c69755d.png)
 
 
 2. 从机地址信号 (SLAVE_ADDRESS)：其实信号产生后所有从机开始等待主机接下来的广播。与主机广播地址相同的设备被选中等待接下来的信号，其余设备会忽略接下来的信号。这个从机地址可以是7位或10位

@@ -56,7 +56,7 @@ EXPORT_SYMBOL(mem_map);
 ```
 
 **Example** *物理地址空间 4MB PAGE_SIZE 4KB 的 Linux 系统*
-![](https://img.jaxwang.top/2025/04/0068e2e33ea222f51b9b2c73f2db3834.png)
+![](https://img.jaxwang28.top/2025/04/0068e2e33ea222f51b9b2c73f2db3834.png)
 
 FLATMEM 物理内存模型，大多数架构中，内存空洞也会有对应的 entry，但是永远不会被初始化。
 
@@ -119,7 +119,7 @@ include/linux/mmzone.h
 
 **Example** *PAGE_SIZE 4KB 的 Linux 系统*
 
-![](https://img.jaxwang.top/2025/04/fdda9f44385a4f7f2a896762576dc212.png)
+![](https://img.jaxwang28.top/2025/04/fdda9f44385a4f7f2a896762576dc212.png)
 
 当物理地址空间中出现 `128MB` 空洞时，并且这 `128MB` 空洞是与 128MB 对齐的就可以减少这部分的 `struct page` 分配而节省内存。
 

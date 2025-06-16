@@ -51,7 +51,7 @@ struct kmem_cache {
 }
 ```
 
-<center><img src="https://img.jaxwang.top/2025/04/c8590fa84ab49e876bb5296f2dc13712.png" width="70%" height="70%"> </center>
+<center><img src="https://img.jaxwang28.top/2025/04/c8590fa84ab49e876bb5296f2dc13712.png" width="70%" height="70%"> </center>
 
 上面的例子中，指针指向是 `struct kmem_cache` 中 `list` 成员。通过这个成员的地址获得 `struct kmem_cache` 的地址的操作，在 Linux 中通过 `list_entry` 实现。下面分析其实现逻辑。
 
@@ -116,7 +116,7 @@ struct hlist_node {
 };
 ```
 
-<center><img src="https://img.jaxwang.top/2025/04/743a01bbad60899615e2f1507da5f383.png" width="70%" height="70%"></center>
+<center><img src="https://img.jaxwang28.top/2025/04/743a01bbad60899615e2f1507da5f383.png" width="70%" height="70%"></center>
 
 Linux kernel 设计 `hlist_head` 仅包含一个指针用作 hash_table 中的列表头，这样可以节省很大空间，特别是当 hash bucket 很大的时候，可以节省一半空间。
 

@@ -98,7 +98,7 @@ The core RCU API is quite small:
 
 ## 三、RCU 基本流程
 
-![](https://img.jaxwang.top/2025/05/f8d5c7c2e7482d64287db39491eaaa19.png)
+![](https://img.jaxwang28.top/2025/05/f8d5c7c2e7482d64287db39491eaaa19.png)
 
 
 

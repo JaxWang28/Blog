@@ -34,7 +34,7 @@ Redmi AX6000 CPU 参数：<br>
 * 制程：12nm
 * 频率：2.0 GHz
 
-![](https://img.jaxwang.top/2024/11/593b4f15b720827f57cc27336a240a39.png)
+![](https://img.jaxwang28.top/2024/11/593b4f15b720827f57cc27336a240a39.png)
 
 
 
@@ -48,7 +48,7 @@ Redmi AX6000 RAM 参数：<br>
 * 容量：512 MB
 * 频率：3200 MHz
 
-![](https://img.jaxwang.top/2024/11/9372c151d96a21ba55fdf02e879fbde6.png)
+![](https://img.jaxwang28.top/2024/11/9372c151d96a21ba55fdf02e879fbde6.png)
 
 
 
@@ -60,7 +60,7 @@ Redmi AX6000 Flash 参数：<br>
 * 型号：F50L1G41LB
 * 容量：128MB
 
-![](https://img.jaxwang.top/2024/11/4ad1efa4af7e3292989104efb5eea9e4.png)
+![](https://img.jaxwang28.top/2024/11/4ad1efa4af7e3292989104efb5eea9e4.png)
 
 
 
@@ -76,7 +76,7 @@ Redmi AX6000 交换芯片参数：<br>
 
 
 
-![](https://img.jaxwang.top/2024/11/1ec95b35864bf4766a59dbb32d482e9f.png)
+![](https://img.jaxwang28.top/2024/11/1ec95b35864bf4766a59dbb32d482e9f.png)
 
 
 
@@ -87,7 +87,7 @@ Redmi AX6000 交换芯片参数：<br>
 ## 2.4G RF
 2.4G RF芯片型号是MT7976GN，通过”IQ“与MT7986A连接，支持4x4MIMO的Wi-Fi 6，在40MHz频宽和1024-QAM，最高速率1147Mbps
 
-![](https://img.jaxwang.top/2024/11/3b5df8fd5e9715b3576a0b5267bf2fc0.png)
+![](https://img.jaxwang28.top/2024/11/3b5df8fd5e9715b3576a0b5267bf2fc0.png)
 
 ## 5G RF
 
@@ -96,7 +96,7 @@ Redmi AX6000 5G RF 芯片参数：<br>
 * 4x4 MIMO WiFi 6
 * 160MHz 1024-QAM 最高速率 4804Mbps
 
-![](https://img.jaxwang.top/2024/11/fe09e99d90e078e89a5b4d14f08f1cd3.png)
+![](https://img.jaxwang28.top/2024/11/fe09e99d90e078e89a5b4d14f08f1cd3.png)
 
 
 **IQ 接口**：
@@ -142,7 +142,7 @@ FEM 芯片位于无线通信系统的射频前端（从天线到基带处理器�
 
 型号：RTC66568
 
-![](https://img.jaxwang.top/2024/11/4fa8c496d793ee6fa77bfb0080a53224.png)
+![](https://img.jaxwang28.top/2024/11/4fa8c496d793ee6fa77bfb0080a53224.png)
 
 
 

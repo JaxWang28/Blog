@@ -18,7 +18,7 @@ categories: Debug
 Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具，本文简单分析 Valgrind 基本原理及其框架组成，并记录其在嵌入式设备上的移植与调试过程。
 
 <center>
-<img src="https://img.jaxwang.top/2025/05/58dd96be77f8cf9442f0177a402fc258.png" width="50%" height="50%">
+<img src="https://img.jaxwang28.top/2025/05/58dd96be77f8cf9442f0177a402fc258.png" width="50%" height="50%">
 </center>
 
 ## 一、插桩技术概述
@@ -34,7 +34,7 @@ Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软
 Valgrind 本质上是一套核心框架 framework，其提供了核心 Core 及 APIs ，在此框架基础上开发出 7 个工具：
 
 <center>
-<img src="https://img.jaxwang.top/2025/05/ca0ba156ff8f0203ba14b1e713ea4318.png" width="50%" height="50%">
+<img src="https://img.jaxwang28.top/2025/05/ca0ba156ff8f0203ba14b1e713ea4318.png" width="50%" height="50%">
 </center>
 
 
