@@ -66,7 +66,7 @@ I2C 的通信过程是**由主机发起的，支持主机写数据到从机和�
 	* 写数据：主机接收到从机的应答 ACK 信号后开始发送数据，每个数据包大小为 **8 bits**, 主机每发送一个数据包，等待从机应答信号 ACK，并重复这个过程
 	* 读数据：主机接收到从机的应答 ACK 信号后开始接收数据，从机开始发送数据，每个数据包也是 **8 bits**，从机每发送一个数据包要等待主机的应答信号 ACK，并重复这个过程。倘若主机希望停止接收数据，会发送一个非应答信号 NACK，从机接收到需停止发送
 6. 停止信号 P：当 SCL 是高电平时 SDA 线由低电平向高电平切换，表示通讯的停止。
-
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT80sTpLb4hnwnakWrnMCdYb4XUBq1AyXPyUGrt9kvvdiJV0j0tlblss1WYw9t8Bg6rmAftxJSVIrcU/pubhtml?widget=true&amp;headers=false"></iframe>
 
 ## Ref
 https://doc.embedfire.com/mcu/stm32/f103badao/std/zh/latest/book/I2C.html 野火 STM32
