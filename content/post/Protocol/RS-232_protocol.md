@@ -52,5 +52,5 @@ RS-232 标准的数据包由发送端的 TXD 接口发送到接收端的 RXD 接
 由于 RS-232 是串口异步通讯，即通信过程中没有时钟信号（DB9接口中是没有时钟信号的），所以两个通讯设备之间需要约定好波特率，即每个码元的长度，以便对信号进行解码。常见的波特率为4800、9600、115200等。
 
 ## Ref
-https://doc.embedfire.com/mcu/stm32/f103badao/std/zh/latest/book/USART.html 野火STM32
+[1]  野火 STM32 https://doc.embedfire.com/mcu/stm32/f103badao/std/zh/latest/book/USART.html
 
