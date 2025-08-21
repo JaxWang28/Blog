@@ -57,3 +57,5 @@ enable = true
   block = [ [ "\\[", "\\]" ], [ "$$", "$$" ] ]
   inline = [ [ "\\(", "\\)" ] ]
 
+[params.busuanzi]
+enable = true
