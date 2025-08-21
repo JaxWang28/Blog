@@ -6,5 +6,9 @@ title: Jackson's Blog
 # Jackson's Blog
 
 **You know some birds are not meant to be caged, their feathers are just too bright.**<br>
-                                                            —The Shawshank Redemption.
+                                                            — The Shawshank Redemption.
+
+
+吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？<br>
+                                                            —《论语·学而》
 
