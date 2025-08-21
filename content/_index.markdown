@@ -9,6 +9,6 @@ title: Jackson's Blog
                                                             — The Shawshank Redemption.
 
 
-吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？<br>
+**吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？**<br>
                                                             —《论语·学而》
 
